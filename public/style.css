@@ -1,0 +1,119 @@
+/* LexPrep styles - colors match the presentation */
+:root {
+  --navy: #1E2761;
+  --ink: #212121;
+  --gray: #595959;
+  --line: #D9D9D9;
+  --tint: #EEF1FA;
+  --white: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Calibri, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+}
+
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 16px 24px;
+}
+header a { color: var(--white); text-decoration: none; }
+header h1 { margin: 0; font-size: 28px; }
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ---------- Home / Search ---------- */
+#search {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 18px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+}
+#search:focus { outline: none; border-color: var(--navy); }
+
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 20px;
+}
+.chip {
+  border: 2px solid var(--navy);
+  background: var(--white);
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.chip.active { background: var(--navy); color: var(--white); }
+
+.term-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.term-card:hover { background: var(--tint); }
+.term-name { font-size: 18px; font-weight: bold; }
+
+.tag {
+  background: var(--tint);
+  color: var(--navy);
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.message {
+  color: var(--gray);
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* ---------- Term Detail ---------- */
+.back { color: var(--navy); text-decoration: none; }
+.detail-title { display: flex; align-items: center; gap: 12px; margin: 16px 0 8px; }
+.detail-title h2 { margin: 0; font-size: 32px; color: var(--navy); }
+
+.section {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--tint);
+}
+.section h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+.section p { margin: 0; font-size: 17px; line-height: 1.4; }
+
+.quiz-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 16px;
+}
+.quiz-button:disabled { opacity: 0.5; cursor: not-allowed; }
