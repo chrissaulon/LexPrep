@@ -2,6 +2,7 @@
 -- Christian Saulon - Advanced Software Project
 -- Run in MySQL Workbench: File > Open SQL Script > lightning bolt.
 -- Running it again rebuilds the database from scratch.
+--
 
 DROP DATABASE IF EXISTS lexprep;
 CREATE DATABASE lexprep;
